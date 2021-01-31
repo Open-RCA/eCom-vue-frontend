@@ -3,7 +3,7 @@
 <div class="overlay-panel overlay-right">
 			<h1>Infinity</h1>
 			<p>Enter your details and start journey with us</p>
-			<button class="ghost" id="signUp">Sign Up</button>
+			<button class="ghost">Sign Up</button>
 		</div>
   <div class="form-container sign-in-container">
 	<form action="#">
@@ -11,8 +11,7 @@
 	<span>or use your account</span>
 	<input type="email" name="email" placeholder="Email">
 	<input type="password" name="password" placeholder="Password">
-	<a href="#">Forgot Your Password</a>
-
+     <router-link to="signup">Don't an have an account yet? <span class="directive">Sign up here</span></router-link>
 	<button>Sign In</button>
 	</form>
 </div>
@@ -32,7 +31,10 @@ export default {
 * {
 	box-sizing: border-box;
 }
-
+.directive{
+    color: #407BFF;
+    font-size:16px;
+}
 body {
 	background: #f6f5f7;
 	display: flex;
@@ -73,7 +75,7 @@ a {
 }
 
 button {
-	border-radius: 20px;
+	border-radius: 3px;
 	border: 1px solid #407BFF;
 	background-color: #407BFF;
 	color: #FFFFFF;

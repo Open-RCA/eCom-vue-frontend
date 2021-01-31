@@ -13,6 +13,7 @@
 	<input type="text" name="name" placeholder="Name">
 	<input type="email" name="email" placeholder="Email">
 	<input type="password" name="password" placeholder="Password">
+    <router-link to="signin">Have an account? <span class="directive">Sign in here</span></router-link>
 	<button>SignUp</button>
 </form>
 </div>
@@ -32,7 +33,10 @@ export default {
 * {
 	box-sizing: border-box;
 }
-
+.directive{
+    color: #407BFF;
+    font-size:16px;
+}
 body {
 	background: #f6f5f7;
 	display: flex;
@@ -73,7 +77,7 @@ a {
 }
 
 button {
-	border-radius: 20px;
+	border-radius: 3px;
 	border: 1px solid #407BFF;
 	background-color: #407BFF;
 	color: #FFFFFF;
