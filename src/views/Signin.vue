@@ -2,7 +2,7 @@
 <div>
 <div class="overlay-panel overlay-right">
 			<h1 class="h1-white">Infinity</h1>
-			<p>Enter your details and start journey with us</p>
+			<p>Get products that you wish to get on time and in no distance</p>
 			<button class="ghost">Sign Up</button>
 		</div>
   <div class="form-container sign-in-container">
