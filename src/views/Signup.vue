@@ -1,11 +1,11 @@
 <template>
 <div>
-<div class="overlay-panel overlay-right">
+<div class="overlay-panel overlay-left">
 			<h1>Infinity</h1>
 			<p>Get products that you wish to get on time and in no distance</p>
 			<button class="ghost" id="signIn">Sign In</button>
 		</div>
-    <div class="form-container sign-in-container">
+    <div class="form-container sign-up-container">
 
 <form action="">
 	<h1>Create Account</h1>
@@ -136,8 +136,8 @@ input {
 	transition: all 0.6s ease-in-out;
 }
 
-.sign-in-container {
-	left: 0;
+.sign-up-container {
+	right: 0;
 	width: 50%;
 	z-index: 2;
 }
@@ -161,6 +161,7 @@ input {
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
     background-color: #407BFF;
+    left: 0;
 }
 
 .overlay-right {
