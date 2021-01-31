@@ -1,30 +1,31 @@
 <template>
-  <div class="home">
-    <Signin/>
-    <Signup/>
-    <AuthOverlay/>
-  </div>
+<div>
+<div class="overlay-panel overlay-right">
+			<h1>Infinity</h1>
+			<p>Enter your details and start journey with us</p>
+			<button class="ghost" id="signUp">Sign Up</button>
+		</div>
+  <div class="form-container sign-in-container">
+	<form action="#">
+		<h1>Sign In</h1>
+	<span>or use your account</span>
+	<input type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Password">
+	<a href="#">Forgot Your Password</a>
+
+	<button>Sign In</button>
+	</form>
+</div>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Signin from "@/components/Signin.vue";
-import Signup from "@/components/Signup.vue";
-import AuthOverlay from "@/components/AuthOverlay.vue";
-
 export default {
-  name: "Auth",
-  components: {
-    Signin,
-    Signup,
-    AuthOverlay
-  },
-  methods:{
-      
-  }
-};
+    name: "Signin",
+}
 </script>
-<style>
+
+<style scoped>
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
@@ -188,7 +189,7 @@ input {
 
 .overlay {
 	background: #407BFF;
-	background:  #407BFF;
+	background: #407BFF;
 	background:  #407BFF;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -207,6 +208,7 @@ input {
 }
 
 .overlay-panel {
+    color: #fff;
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -219,6 +221,7 @@ input {
 	width: 50%;
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
+    background-color: #407BFF;
 }
 
 .overlay-left {
