@@ -1,11 +1,11 @@
 <template>
 <div>
-		<div class="overlay-panel overlay-right">
+		<div class="overlay-panel overlay-left">
 			<h1>Infinity</h1>
 			<p>Enter your details and start journey with us</p>
 			<button class="ghost" id="signUp">Sign Up</button>
 		</div>
-    <div class="form-container sign-in-container">
+    <div class="form-container sign-up-container">
 
 <form action="">
 	<h1>Create Account</h1>
