@@ -1,7 +1,7 @@
 <template>
 <div>
 <div class="overlay-panel overlay-left">
-			<h1>Infinity</h1>
+			<h1 class="h1-white">Infinity</h1>
 			<p>Get products that you wish to get on time and in no distance</p>
 			<button class="ghost" id="signIn">Sign In</button>
 		</div>
