@@ -7,11 +7,13 @@
 		</div>
     <div class="form-container sign-up-container">
 
-<form action="">
+<form v-on:submit.prevent="saveUser">
 	<h1>Create Account</h1>
-	<input type="text" name="name" placeholder="Name">
-	<input type="email" name="email" placeholder="Email">
-	<input type="password" name="password" placeholder="Password">
+	<input type="text" name="fname" placeholder="First name" v-model="user.fname">
+    <input type="text" name="lname" placeholder="Last name" v-model="user.lname">
+    <input type="text" name="uname" placeholder="Username" v-model="user.uname">
+	<input type="email" name="email" placeholder="Email" v-model="user.email">
+	<input type="password" name="password" placeholder="Password" v-model="user.password">
     <router-link to="signin">Have an account? <span class="directive">Sign in here</span></router-link>
 	<button>SignUp</button>
 </form>
@@ -22,6 +24,27 @@
 <script>
 export default {
     name: "Signup",
+    data(){
+        return{
+            user:{
+                fname: "",
+                lname:"",
+                uname:"",
+                password: "",
+                email:""
+            }
+        }
+    },
+    methods: {
+        saveUser(){
+            if(this.user.uname == ""){
+                alert("no username added")
+            }
+            else{
+                alert("This is username:"+this.user.uname)
+            }
+        }
+    }
 }
 </script>
 
