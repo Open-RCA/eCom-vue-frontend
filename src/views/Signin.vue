@@ -42,10 +42,6 @@ export default {
 </script>
 
 <style scoped>
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-
 .sign-in-container {
 	left: 0;
 	width: 50%;

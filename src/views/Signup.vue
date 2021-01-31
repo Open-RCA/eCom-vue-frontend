@@ -14,7 +14,7 @@
     <input type="text" name="uname" placeholder="Username" v-model="user.uname">
 	<input type="email" name="email" placeholder="Email" v-model="user.email">
 	<input type="password" name="password" placeholder="Password" v-model="user.password">
-    <router-link to="signin">Have an account? <span class="directive">Sign in here</span></router-link>
+    <router-link to="signin">Already have an account? <span class="directive">Sign in here</span></router-link>
 	<button>SignUp</button>
 </form>
 </div>
