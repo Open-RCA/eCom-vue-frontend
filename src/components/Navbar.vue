@@ -13,6 +13,7 @@
       >
     </div>
     <Search class="search" />
+    <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
   </div>
 </template>
 
@@ -81,8 +82,17 @@ export default {
       }
     }
   }
-  .search{
+  .search {
     padding: 6px 30px;
+  }
+  .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 19px;
+      width: 43px;
+    }
   }
 }
 </style>
