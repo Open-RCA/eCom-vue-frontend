@@ -17,9 +17,10 @@
                         </span>
                     </div>
             </div>
-            <div class="img1"><img src="../assets/images/shoe5@2x.png" alt="" width="222px" height="378px"></div>
-            <div class="img2"><img src="../assets/images/jordan-4657349@2x.png" alt="" width="468px" height="318px"></div>
-            <div class="img3"><img src="../assets/images/nike-5418992@2x.png" alt="" width="468px" height="312px"></div>
+
+                <img class="img1" src="../assets/images/shoe5@2x.png" alt="" width="322px" height="522px">
+                <img src="../assets/images/jordan-4657349@2x.png" alt="" width="468px" height="418px">
+                <img src="../assets/images/nike-5418992@2x.png" alt="" width="468px" height="312px">
         </div>
     </div>
 </template>
