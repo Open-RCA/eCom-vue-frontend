@@ -12,6 +12,7 @@
         >{{ link.name }}</router-link
       >
     </div>
+    <Search class="search" />
   </div>
 </template>
 
@@ -41,8 +42,47 @@ export default {
       },
     ],
   }),
+  components: {
+    Search: () => import("@/components/my-search-ui"),
+  },
 };
 </script>
 
-<style lang="sccs" scoped>
+<style lang="scss" scoped>
+#top_navigation {
+  width: 1920px;
+  // height: 50px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.01);
+  padding: 12px 26px;
+  text-align: left;
+  display: flex;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .links {
+    padding: 12px 30px;
+
+    .link {
+      font-family: Raleway;
+      font-weight: normal;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-align: left;
+      color: #646464;
+      text-decoration: none;
+      margin: 0px 12px;
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+  .search{
+    padding: 6px 30px;
+  }
+}
 </style>
