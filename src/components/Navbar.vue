@@ -1,16 +1,48 @@
 <template>
-  <div id="top_navigation">nav here</div>
+  <div id="top_navigation">
+    <div class="logo">
+      <img src="@/assets/svg/logo.svg" alt="" />
+    </div>
+    <div class="links">
+      <router-link
+        v-for="(link, i) in links"
+        :key="i"
+        :class="`link ${link.path == $route.path ? 'active' : ''}`"
+        :to="link.path"
+        >{{ link.name }}</router-link
+      >
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    links: [
+      {
+        name: "Home",
+        path: "/",
+      },
+      {
+        name: "About",
+        path: "/about",
+      },
+      {
+        name: "Collections",
+        path: "/collections",
+      },
+      {
+        name: "Shop",
+        path: "/shop",
+      },
+      {
+        name: "Contact us",
+        path: "/contact",
+      },
+    ],
+  }),
+};
 </script>
 
 <style lang="sccs" scoped>
-#top_navigation {
-  width: 1920px;
-  height: 104px;
-  background: #fff;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.01);
-}
 </style>

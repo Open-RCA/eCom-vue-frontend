@@ -1,3 +1,8 @@
+@import './imports/fonts';
 @import './imports/product';
-@import './imports/_collection.scss'
+@import './imports/navbar';
+@import './imports/_collection.scss';
 
+body {
+    margin: 0;
+}
