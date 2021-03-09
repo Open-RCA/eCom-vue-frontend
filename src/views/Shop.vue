@@ -1,7 +1,7 @@
 <template>
   <div id="shop_pag">
     <Nav-bar />
-    <Footer />
+    <Footer class="footer" />
   </div>
 </template>
 
@@ -14,5 +14,8 @@ export default {
 };
 </script>
 
-<style lang="sccs" scoped>
+<style lang="scss" scoped>
+.footer{
+  margin-top: 12px;
+}
 </style>
