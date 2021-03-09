@@ -13,7 +13,11 @@
       >
     </div>
     <Search class="search" />
-    <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
+    <div class="side-items">
+      <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
+      <Button class="button" content="Sign in" :dark="true" />
+      <Button class="button" content="Sign in" :outlined="true" />
+    </div>
   </div>
 </template>
 
@@ -45,6 +49,7 @@ export default {
   }),
   components: {
     Search: () => import("@/components/my-search-ui"),
+    Button: () => import("@/components/my-button-ui"),
   },
 };
 </script>
@@ -93,6 +98,13 @@ export default {
       height: 19px;
       width: 43px;
     }
+  }
+  .button {
+    margin-left: 24px;
+  }
+  .side-items {
+    display: flex;
+    margin-left: 152px;
   }
 }
 </style>
