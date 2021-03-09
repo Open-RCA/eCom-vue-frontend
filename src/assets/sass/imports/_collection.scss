@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+body{
+    background: #FAFAFA;
+
+}
+#allcollected{
+    color: black;
+    padding: 30px 50px 50px 50px;
+   
+}
+.head{
+    color: black;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+}
+#collect{
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+    
+}
+.text{
+    color: black;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    padding: 80px 110px 50px 50px;
+    position: absolute;
+}
+p{
+    font-size: small;
+    font-weight: 300;
+    padding: 20px 66em 45px 0px;
+}
+.onclick{
+    color: white;
+    background-color: black;
+    width: 20em;
+    height: 4em;
+    border: none;
+    cursor: pointer;
+    
+}
+.pagination{
+    display: inline-block;
+    display: block;
+    padding-top: 50px;
+}
+.pagination a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    padding: 4px 10px;
+    color: black;
+    float: left;
+    border: 1px solid #707070 ;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.pagination a:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.img1{
+    padding:50px 50px 50px ;
+}
+.img2{
+    display: inline;
+    position: absolute;
+}
