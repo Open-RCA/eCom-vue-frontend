@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Signin from "../views/Signin.vue";
 import Signup from "../views/Signup.vue";
 import Shop from "../views/Shop.vue";
+import collection from "../components/Collection.vue";
 
 Vue.use(VueRouter);
 
@@ -36,6 +37,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: "/collect",
+    name: "Collections",
+    component: collection
   }
 ];
 
