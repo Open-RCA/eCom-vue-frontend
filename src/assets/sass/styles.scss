@@ -1,1 +1,8 @@
-@import './imports/product'
+@import './imports/fonts';
+@import './imports/product';
+@import './imports/_collection.scss';
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
