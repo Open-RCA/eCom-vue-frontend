@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="card-container row">
       <div class="product-card">
           <div class="product-image">
               <img src="../../public/bottle2@3x.png" alt="">
@@ -41,14 +41,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
-    font-family: raleway;
+.card-container{
+    font-family: Raleway;
     background: #F1F1F1;
     widows: 100%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     .product-card{
         
-        max-width: 18%;
+        // max-width: 18%;
         height: 270px;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
         &:hover{
@@ -68,13 +70,13 @@ export default {
             p{
                 color: #414141;
                 text-align: left;
-                padding-left: 15px;
+                padding: 0 15px !important;
             }
             .product-name{
                 color: #000;
                 font-weight: bold;
                 font-size: 15px;
-                padding: 20px 15px 0;
+                padding-top: 20px !important;
             }
             .rating {
                 margin-left: 15px;
