@@ -1,0 +1,114 @@
+.head{
+    color: black;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    margin-left: 0em;
+}
+
+.description{
+width: 260px;
+height: 140px;
+background-color:#FFF;
+margin-left: 0px;
+margin-top: -4.1em;
+margin-bottom: 5em;
+display: inline-block;
+}
+
+.name{
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    float: left;
+    margin-top: 1em;
+    padding-left: 8px;
+}
+.price{
+    font-family: 'Raleway';
+    font-size: 14px;
+    float: right;
+    margin-top: 1em;
+    padding-right: 7px;
+}
+.circ{
+    margin-left: 1em;
+}
+button{
+    float: left;
+    margin-left: 10px;
+    font-family: Raleway;
+    font-size: 8;
+    width: 9em;
+    height: 3em;
+    margin-top: 32px;
+    border: 0;
+    color: #FFF;
+    background-color: black;
+}
+
+.img1{
+    width: 300px;
+    height: 665px;
+    margin-left: -15px;
+    margin-top: -300px;
+    float: left;
+}
+
+.img2{
+    width: 100px;
+    height: 100px;
+    margin-left: -15px;
+    margin-top: 200px;
+    // float: left;
+}
+
+.img3{
+    width: 300px;
+    height: 300px;
+    margin-left: -15px;
+    margin-top: -10px;
+    float: left;
+}
+
+.img4{
+    width: 300px;
+    height: 400px;
+    margin-left: -15px;
+    margin-top: -110px;
+    float: left;
+}
+
+.img2{
+    width: 400px;
+    height: 400px;
+    margin-left: 1px;
+    margin-top: 20px;
+    float: left;
+}
+.img{
+    background-color: rgb(202, 202, 202);
+    border: 1px solid transparent;
+    width: 260px;
+    height: 300px;
+    margin-left: 50px;
+    margin-top: -26px;
+    display:inline;
+}
+.collections{
+    display: flex;
+}
+
+
+h3{
+    color: black;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    margin-left: 3em;
+}
+
+.men-collection img{
+    width: 500px;
+    height: 600px;
+    margin-left: -46em;
+}
