@@ -24,7 +24,7 @@ export default {
       return `width: ${this.width}px;`;
     },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
