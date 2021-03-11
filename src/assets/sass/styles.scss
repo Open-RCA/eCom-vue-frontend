@@ -1,3 +1,9 @@
+@import './imports/fonts';
 @import './imports/product';
-@import './imports/_collection.scss'
+@import './imports/_collection.scss';
+@import './imports/SuperCollections.scss';
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
