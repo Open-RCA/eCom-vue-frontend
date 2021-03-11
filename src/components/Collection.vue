@@ -17,13 +17,21 @@
                         </span>
                     </div>
             </div>
-
-                <img class="img1" src="../assets/images/shoe5@2x.png" alt="" width="322px" height="522px">
-                <img src="../assets/images/jordan-4657349@2x.png" alt="" width="468px" height="418px">
-                <img src="../assets/images/nike-5418992@2x.png" alt="" width="468px" height="312px">
+            <div class="imgs" >
+                <img class="img1" src="../assets/images/shoe5.png" alt="" width="240px" height="385px">
+                <div class="img2">
+                <img src="../assets/images/jordan-4657349@2x.png" alt="" width="306px" height="207px">
+                <img src="../assets/images/nike-5418992@2x.png" alt="" width="306px" height="207px">
+            </div>
+            </div>
         </div>
-    </div>
+        </div>
 </template>
+<script>
+export default {
+    
+}
+</script>
 <style lang="scss" scoped>
 
 </style>
