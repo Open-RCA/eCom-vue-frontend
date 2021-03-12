@@ -231,5 +231,6 @@ export default {
   width: 10px;
   height: 10px;
   float: left;
+  margin-bottom: -100px;
 }
 </style>
