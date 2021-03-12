@@ -1,64 +1,244 @@
 <template>
-  <div>
-    <Nav-bar />
-    <div id="allcollected">
-      <h3 class="head">Our collections</h3>
-      <div id="collect">
-        <div class="text">
-          <h3 class="jordans">Jordans</h3>
-          <p>
-            Jordans are the best shoes to best seen on this earth. Try buying
-            them and see how you fell happy.
-          </p>
-          <button class="onclick">Visit Collections</button>
-          <div class="pagination">
-            <span>
-              <a href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-            </span>
+  <div id="allcollected">
+    <h3 class="head">Our collections</h3>
+      <swiper class="swiper" :options="swiperOption">
+        <swiper-slide>
+          <div class="text">
+            <h3 class="jordans">Jordans</h3>
+            <p>
+              Jordans are the best shoes to best seen on this earth. Try buying them and
+              see how you fell happy.
+            </p>
+            <button class="onclick">Visit Collections</button>
           </div>
-        </div>
-
-        <img
-          class="img1"
-          src="../assets/images/shoe5@2x.png"
-          alt=""
-          width="322px"
-          height="522px"
-        />
-        <img
-          src="../assets/images/jordan-4657349@2x.png"
-          alt=""
-          width="468px"
-          height="418px"
-        />
-        <img
-          src="../assets/images/nike-5418992@2x.png"
-          alt=""
-          width="468px"
-          height="312px"
-        />
-      </div>
+          <div class="imgs">
+            <img
+              class="img1"
+              src="../assets/images/shoe5.png"
+              alt=""
+              width="212px"
+              height="341px"
+            />
+            <div class="img2">
+              <img
+                src="../assets/images/jordan-4657349@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+              <img
+                src="../assets/images/nike-5418992@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="text">
+            <h3 class="jordans">Jordans</h3>
+            <p>
+              Jordans are the best shoes to best seen on this earth. Try buying them and
+              see how you fell happy.
+            </p>
+            <button class="onclick">Visit Collections</button>
+          </div>
+          <div class="imgs">
+            <img
+              class="img1"
+              src="../assets/images/shoe5.png"
+              alt=""
+              width="212px"
+              height="341px"
+            />
+            <div class="img2">
+              <img
+                src="../assets/images/jordan-4657349@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+              <img
+                src="../assets/images/nike-5418992@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="text">
+            <h3 class="jordans">Jordans</h3>
+            <p>
+              Jordans are the best shoes to best seen on this earth. Try buying them and
+              see how you fell happy.
+            </p>
+            <button class="onclick">Visit Collections</button>
+          </div>
+          <div class="imgs">
+            <img
+              class="img1"
+              src="../assets/images/shoe5.png"
+              alt=""
+              width="212px"
+              height="341px"
+            />
+            <div class="img2">
+              <img
+                src="../assets/images/jordan-4657349@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+              <img
+                src="../assets/images/nike-5418992@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="text">
+            <h3 class="jordans">Jordans</h3>
+            <p>
+              Jordans are the best shoes to best seen on this earth. Try buying them and
+              see how you fell happy.
+            </p>
+            <button class="onclick">Visit Collections</button>
+          </div>
+          <div class="imgs">
+            <img
+              class="img1"
+              src="../assets/images/shoe5.png"
+              alt=""
+              width="212px"
+              height="341px"
+            />
+            <div class="img2">
+              <img
+                src="../assets/images/jordan-4657349@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+              <img
+                src="../assets/images/nike-5418992@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="text">
+            <h3 class="jordans">Jordans</h3>
+            <p>
+              Jordans are the best shoes to best seen on this earth. Try buying them and
+              see how you fell happy.
+            </p>
+            <button class="onclick">Visit Collections</button>
+          </div>
+          <div class="imgs">
+            <img
+              class="img1"
+              src="../assets/images/shoe5.png"
+              alt=""
+              width="212px"
+              height="341px"
+            />
+            <div class="img2">
+              <img
+                src="../assets/images/jordan-4657349@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+              <img
+                src="../assets/images/nike-5418992@2x.png"
+                alt=""
+                width="252px"
+                height="171px"
+              />
+            </div>
+          </div>
+        </swiper-slide>
+        <div class="swiper-pagination swiper-pagination-bullets" slot="pagination"></div>
+      </swiper>
     </div>
-    <Footer class="footer" />
-  </div>
 </template>
-<style lang="scss" scoped></style>
-
 <script>
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
 export default {
+  name: "swiper-example-pagination-custom",
+  title: "Custom pagination",
   components: {
-    NavBar: () => import('@/components/Navbar'),
-    Footer: () => import('@/components/Footer'),
+    Swiper,
+    SwiperSlide,
   },
-}
+  data() {
+    return {
+      swiperOption: {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet(index, className) {
+            return `<span class="${className} swiper-pagination-bullet-custom">${
+              index + 1
+            }</span>`;
+          },
+        },
+      },
+    };
+  },
+};
 </script>
+<style lang="scss">
+@import "./base.scss";
+.swiper {
+  .swiper-pagination-bullet-custom {
+    cursor: pointer;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    background: white;
 
-<style lang="scss" scoped>
-.footer {
-  margin-top: 40vh;
+    &:hover {
+      opacity: 1;
+    }
+
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+      color: white;
+      background: #000000;
+      border:none;
+    }
+  }
+  .swiper-pagination-bullets {
+    bottom: 45px;
+    float: left;
+    left: 0px;
+    width: 28%;
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 4px 8px;
+    border: 1px solid #707070 ;
+    
+  }
+  }
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 6px;
 }
 </style>

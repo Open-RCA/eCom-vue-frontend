@@ -10,7 +10,9 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "sass": "^1.32.8",
+    "swiper": "5.3.6",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-dynamic-star-rating": "^1.0.8",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
