@@ -1,144 +1,143 @@
-.head{
-    color: black;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    font-size: larger;
-    margin-left: 0em;
-    font-weight: 400;
+.head {
+  color: black;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: larger;
+  margin-left: 0em;
+  font-weight: 400;
 }
- .product-image{
-     width: 220px;
-     height: 290px;
-     background-color:rgb(177, 174, 174);
-     margin-left: 3em;
-     margin-top: 0;
-     border: 1px solid transparent;
- }
- .product-image img{
-     height: 290px;
-     width: 270px;
-     margin-top: 1px;
-     margin-left: -1em;
-     border-radius: 0px;
- }
+.product-image {
+  width: 220px;
+  height: 290px;
+  background-color: rgb(177, 174, 174);
+  margin-left: 3em;
+  margin-top: 0;
+  border: 1px solid transparent;
+}
+.product-image img {
+  height: 290px;
+  width: 270px;
+  margin-top: 1px;
+  margin-left: -1em;
+  border-radius: 0px;
+}
 
- .description{
+.description {
   border: 1px solid #fff;
   margin-left: 3em;
   width: 220px;
   height: 120px;
   margin-bottom: 2em;
-  background-color: 	#FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #fff;
   margin-top: -20px;
- }
-
-
- .description h3{
-     font-size: 15px;
-     font-family: Raleway;
-     display: inline;
-     margin-top: 10px;
-     font-weight: 100;
- }
- .price{
-     float: right;
-     margin-right: 15px;
- }
- .name{
-     float: left;
-     margin-left: 15px;
- }
- button{
- margin-top: 25px;
- float: left;
- margin-left: 15px;
- width: 130px;
- height: 33px;
- font-family: Raleway;
- font-size: 14px;
- border-radius: 0;
- border: 1px solid black;
- color: #fff;
- background-color: black;
- font-weight: 200;
- }
-.images{
-    display: block;
-    float: left;
 }
 
-.men-head{
-    color: black;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    font-size: larger;
-    margin-left: 2.5em;
-    margin-top: 26em;
-    font-weight: 400;
+.description h3 {
+  font-size: 15px;
+  font-family: Raleway;
+  display: inline;
+  margin-top: 10px;
+  font-weight: 100;
+}
+.price {
+  float: right;
+  margin-right: 15px;
+}
+.name {
+  float: left;
+  margin-left: 15px;
+}
+button {
+  margin-top: 25px;
+  float: left;
+  margin-left: 15px;
+  width: 130px;
+  height: 33px;
+  font-family: Raleway;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid black;
+  color: #fff;
+  background-color: black;
+  font-weight: 200;
+}
+.images {
+  display: block;
+  float: left;
+}
+
+.men-head {
+  color: black;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: larger;
+  margin-left: 2.5em;
+  margin-top: 26em;
+  font-weight: 400;
 }
 
 .man-collection img {
-    width: 500px;
-    height: 640px;
-    float: left;
-    margin-left: 3em;
+  width: 500px;
+  height: 640px;
+  float: left;
+  margin-left: 3em;
 }
 //man collections
-.man-images{
-    display: block;
-    float: left;
-    margin-top: 2em;
+.man-images {
+  display: block;
+  float: left;
+  margin-top: 2em;
 }
-.man-product-image{
-     width: 215px;
-     height: 170px;
-     background-color:rgb(177, 174, 174);
-     margin-left: 3em;
-     margin-top: -1em;
-     border: 1px solid transparent;
+.man-product-image {
+  width: 215px;
+  height: 170px;
+  background-color: rgb(177, 174, 174);
+  margin-left: 3em;
+  margin-top: -1em;
+  border: 1px solid transparent;
 }
-.man-product-image img{
-    height: 140px;
-    width: 190px;
-    margin-top: 1px;
-    margin-left: -1em;
-    border-radius: 0px;
+.man-product-image img {
+  height: 140px;
+  width: 190px;
+  margin-top: 1px;
+  margin-left: -1em;
+  border-radius: 0px;
 }
-.man-description{
-    border: 1px solid #fff;
-    margin-left: 3em;
-    width: 215px;
-    height: 120px;
-    margin-bottom: 2em;
-    background-color: 	#FFFFFF;
-    border: 1px solid #fff;
-    margin-top: -20px;
-   }
-  
-  
-   .man-description h3{
-       font-size: 15px;
-       font-family: Raleway;
-       display: inline;
-       margin-top: 10px;
-       font-weight: 100;
-   }
-   .man-price{
-    float: right;
-    margin-right: 15px;
-}
-.man-name{
-    float: left;
-    margin-left: 15px;
+.man-description {
+  border: 1px solid #fff;
+  margin-left: 3em;
+  width: 215px;
+  height: 120px;
+  margin-bottom: 2em;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+  margin-top: -20px;
 }
 
-.woman-head{
-    color: black;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    font-size: larger;
-    margin-left: 2.5em;
-    margin-top: 40em;
-    font-weight: 400;
+.man-description h3 {
+  font-size: 15px;
+  font-family: Raleway;
+  display: inline;
+  margin-top: 10px;
+  font-weight: 100;
 }
+.man-price {
+  float: right;
+  margin-right: 15px;
+}
+.man-name {
+  float: left;
+  margin-left: 15px;
+}
+
+.woman-head {
+  color: black;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: larger;
+  margin-left: 2.5em;
+  margin-top: 40em;
+  font-weight: 400;
+}
+

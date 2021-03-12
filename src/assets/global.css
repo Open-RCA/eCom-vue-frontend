@@ -10,7 +10,7 @@ input {
 
 button {
 	border-radius: 3px;
-	border: 1px solid #407BFF;
+	border: 1px solid hsl(222, 33%, 88%);
 	background-color: #407BFF;
 	color: #FFFFFF;
 	font-size: 12px;
