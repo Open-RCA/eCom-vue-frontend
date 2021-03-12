@@ -6,6 +6,7 @@ import Signup from '../views/Signup.vue'
 import Shop from '../views/Shop.vue'
 import collection from '../components/Collection.vue'
 import Collections from '../views/Collections.vue'
+import Product from "../components/ProductCard.vue"
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,11 @@ const routes = [
     component: Shop,
   },
 
+  {
+    path:"/product",
+    name:"Product",
+    component: Product 
+  },
   {
     path: '/about',
     name: 'About',
