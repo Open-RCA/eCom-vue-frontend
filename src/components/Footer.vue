@@ -77,7 +77,7 @@ export default {
 #footer {
   background-color: #000000;
   font-family: Raleway;
-  margin-top: 45em;
+  margin-top: 50em;
   .row {
     padding: 70px 100px;
   }
