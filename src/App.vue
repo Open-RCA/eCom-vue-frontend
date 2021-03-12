@@ -5,9 +5,20 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/auth">Login</router-link> 
     </div> -->
+    <Navbar />
     <router-view />
+    <Footer />
   </div>
 </template>
+
+<script>
+export default {
+  components: {
+    Navbar: () => import("@/components/Navbar"),
+    Footer: () => import("@/components/Footer"),
+  },
+};
+</script>
 
 <style>
 #app {

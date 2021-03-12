@@ -4,7 +4,7 @@ body{
 }
 #allcollected {
   color: black;
-  padding: 30px 50px 50px 80px;
+  padding: 30px 50px 50px 60px;
 }
 .head{
   color: black;
@@ -12,12 +12,13 @@ body{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 20px;
+  margin-left: 25px;
 }
 .swiper {
   background-color: #ffffff;    
   margin-top: 50px;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
-  width:auto;
+  width:74em;
   height: 470px;
 
   .text{
