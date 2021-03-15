@@ -108,7 +108,7 @@
               Jordans are the best shoes to best seen on this earth. Try buying them and
               see how you fell happy.
             </p>
-            <button class="onclick">Visit Collections</button>
+            <button class="click" v-on:click="btnClick('doesnt get link', $event)">Visit Collections</button>
           </div>
           <div class="imgs">
             <img
@@ -196,6 +196,13 @@ export default {
       },
     };
   },
+
+  methods:{
+    btnClick: function (event){
+      if(event)
+      window.open("/collections");
+    }
+  }
 };
 </script>
 <style lang="scss">
