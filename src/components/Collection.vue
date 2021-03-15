@@ -9,7 +9,7 @@
               Jordans are the best shoes to best seen on this earth. Try buying them and
               see how you fell happy.
             </p>
-            <button class="onclick">Visit Collections</button>
+            <button class="click" v-on:click="btnClick('doesnt get link', $event)">Visit Collections</button>
           </div>
           <div class="imgs">
             <img
@@ -42,7 +42,7 @@
               Jordans are the best shoes to best seen on this earth. Try buying them and
               see how you fell happy.
             </p>
-            <button class="onclick">Visit Collections</button>
+            <button class="click" v-on:click="btnClick('doesnt get link', $event)">Visit Collections</button>
           </div>
           <div class="imgs">
             <img
@@ -75,7 +75,7 @@
               Jordans are the best shoes to best seen on this earth. Try buying them and
               see how you fell happy.
             </p>
-            <button class="onclick">Visit Collections</button>
+            <button class="click" v-on:click="btnClick('doesnt get link', $event)">Visit Collections</button>
           </div>
           <div class="imgs">
             <img
@@ -172,8 +172,10 @@
     </div>
 </template>
 <script>
+
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
+
 export default {
   name: "swiper-example-pagination-custom",
   title: "Custom pagination",
