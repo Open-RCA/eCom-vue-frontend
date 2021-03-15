@@ -25,6 +25,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: start;
-  gap: 4rem;
+  gap: 2rem;
 }
 </style>
