@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <div>
       <ShopListingFilter />
     </div>
@@ -7,7 +7,7 @@
       <ShopListingSearch />
       <ShopListing />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -21,7 +21,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
-  background-color: blue;
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: start;
 }
 </style>

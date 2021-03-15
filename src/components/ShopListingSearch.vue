@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h1>Shop listing search</h1>
+  <div class="ShopListingSearch">
+    <div class="container">
+      <input type="text" placeholder="search" />
+    </div>
   </div>
 </template>
 
@@ -9,4 +11,9 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.ShopListingSearch {
+  padding-top: 3em;
+  align-items: start;
+  background-color: red;
+}
 </style>
