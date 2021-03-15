@@ -32,14 +32,13 @@ export default {};
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    width: 20rem;
+    width: 25rem;
     font-family: Raleway;
     outline: none;
   }
   span {
-    // width: 10em;
     position: absolute;
-    left: 18rem;
+    left: 22.5rem;
     bottom: 0.8rem;
     outline: none;
     z-index: 100;
