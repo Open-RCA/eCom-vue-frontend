@@ -59,6 +59,7 @@
  <img v-bind:src="man.Url" alt="man-collection-image">
  </div>
 
+
  <div v-for="man in mancollection" :key="man" class="man-images">
   <div class="man-product-image">
   <img v-bind:src="man.imgUrl" alt="Jordan-product-images">
@@ -111,7 +112,7 @@
  </div>
   </div>
 
-<Footer/>
+<!-- <Footer/> -->
   </div>
 </template>
 <style lang="scss" scoped></style>
@@ -121,7 +122,7 @@
 export default {
   components: {
     NavBar: () => import("@/components/Navbar"),
-    Footer:()=> import("@/components/Footer")
+ //   Footer:()=> import("@/components/Footer")
 
   },
 data(){
@@ -216,11 +217,19 @@ data(){
 
 
     womancollection:[
-        {
-         Name: "Sun Glasses",
+        // {
+        //  Name: "Sun Glasses",
+        //     Price: "$ 1000",
+        //     Rating: 4,
+        //     imgUrl:require( "../assets/images/woman1.png")
+
+        // },
+           {
+
+            Name: "High Hills",
             Price: "$ 1000",
-            Rating: 4,
-            imgUrl:require( "../assets/images/woman1.png")
+            Rating: 5,
+            imgUrl: require("../assets/images/woman2.png")
 
         },
         {
