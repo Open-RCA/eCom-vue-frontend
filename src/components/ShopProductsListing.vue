@@ -179,15 +179,16 @@ export default {
   gap: 2rem;
   font-family: Raleway;
 
+
   .product {
     width: 100%;
     height: 250px;
     background-color: #b3b3b3;
 
-    img {
-      object-fit: cover;
+    img {    object-fit: cover;
       height: 100%;
       width: 100%;
+  
     }
   }
 
