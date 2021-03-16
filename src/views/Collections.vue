@@ -59,6 +59,7 @@
  <img v-bind:src="man.Url" alt="man-collection-image">
  </div>
 
+
  <div v-for="man in mancollection" :key="man" class="man-images">
   <div class="man-product-image">
   <img v-bind:src="man.imgUrl" alt="Jordan-product-images">
