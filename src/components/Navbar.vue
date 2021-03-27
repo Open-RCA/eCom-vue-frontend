@@ -3,20 +3,25 @@
     <div class="logo">
       <img src="@/assets/svg/logo.svg" alt="" />
     </div>
-    <div class="links">
-      <router-link
-        v-for="(link, i) in links"
-        :key="i"
-        :class="`link ${link.path == $route.path ? 'active' : ''}`"
-        :to="link.path"
-        >{{ link.name }}</router-link
-      >
+    <div class="d-none d-lg-block">
+      <div class="links">
+        <router-link
+          v-for="(link, i) in links"
+          :key="i"
+          :class="`link ${link.path == $route.path ? 'active' : ''}`"
+          :to="link.path"
+          >{{ link.name }}</router-link
+        >
+      </div>
+      <Search class="search" />
+      <div class="side-items">
+        <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
+        <Button class="button" content="Sign in" :dark="true" />
+        <Button class="button" content="Sign in" :outlined="true" />
+      </div>
     </div>
-    <Search class="search" />
-    <div class="side-items">
-      <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
-      <Button class="button" content="Sign in" :dark="true" />
-      <Button class="button" content="Sign in" :outlined="true" />
+    <div class="d-lg-none">
+      <img src="@/assets/svg/bars.svg" alt="" />
     </div>
   </div>
 </template>
@@ -56,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 #top_navigation {
-  width: 1920px;
+  // width: 1920px;
   // height: 50px;
   background: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.01);
