@@ -20,8 +20,8 @@
         <Button class="button" content="Sign in" :outlined="true" />
       </div>
     </div>
-    <div class="d-lg-none">
-      <img src="@/assets/svg/bars.svg" alt="" />
+    <div class="d-lg-none toogle-nav">
+      <img cla src="@/assets/svg/bars.svg" alt="" />
     </div>
   </div>
 </template>
@@ -110,6 +110,13 @@ export default {
   .side-items {
     display: flex;
     margin-left: 152px;
+  }
+  .toogle-nav {
+    right: 22px;
+    position: absolute;
+    img{
+      width:30px;
+    }
   }
 }
 </style>
