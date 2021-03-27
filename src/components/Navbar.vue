@@ -1,7 +1,16 @@
 <template>
   <div id="top_navigation">
-    <div class="logo">
-      <img src="@/assets/svg/logo.svg" alt="" />
+    <div class="row">
+      <div class="col-1">
+        <div class="logo">
+          <img src="@/assets/svg/logo.svg" alt="" />
+        </div>
+      </div>
+      <div class="col-1 offset-10">
+        <div class="d-lg-none toogle-nav" @click="showModal = true">
+          <img cla src="@/assets/svg/bars.svg" alt="" />
+        </div>
+      </div>
     </div>
     <div class="d-none d-lg-block">
       <div class="links">
@@ -20,9 +29,6 @@
         <Button class="button" content="Sign in" :outlined="true" />
       </div>
     </div>
-    <div class="d-lg-none toogle-nav" @click="showModal = true">
-      <img cla src="@/assets/svg/bars.svg" alt="" />
-    </div>
     <Modal class="small-nav" v-show="showModal" @close="showModal = false">
       <template v-slot:content>
         <div>
@@ -36,8 +42,8 @@
           <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
         </div>
         <div class="d-flex">
-            <Button class="button" content="Sign in" :dark="true" />
-            <Button class="button" content="Sign in" :outlined="true" />
+          <Button class="button" content="Sign in" :dark="true" />
+          <Button class="button" content="Sign in" :outlined="true" />
         </div>
       </template>
     </Modal>
@@ -69,7 +75,7 @@ export default {
         path: "/contact",
       },
     ],
-    showModal: true,
+    showModal: false,
   }),
   components: {
     Search: () => import("@/components/my-search-ui"),
@@ -87,7 +93,7 @@ export default {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.01);
   padding: 12px 26px;
   text-align: left;
-  display: flex;
+  // display: flex;
 
   img {
     width: 40px;
@@ -151,12 +157,12 @@ export default {
       display: block;
       margin-bottom: 26px;
     }
-    .button{
+    .button {
       margin-left: 0;
       margin-right: 35px;
     }
   }
-  .d-flex{
+  .d-flex {
     display: flex;
   }
 }
