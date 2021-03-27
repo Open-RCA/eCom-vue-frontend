@@ -20,9 +20,27 @@
         <Button class="button" content="Sign in" :outlined="true" />
       </div>
     </div>
-    <div class="d-lg-none toogle-nav">
+    <div class="d-lg-none toogle-nav" @click="showModal = true">
       <img cla src="@/assets/svg/bars.svg" alt="" />
     </div>
+    <Modal class="small-nav" v-show="showModal" @close="showModal = false">
+      <template v-slot:content>
+        <div>
+          <router-link
+            v-for="(link, i) in links"
+            :key="i"
+            :class="`link ${link.path == $route.path ? 'active' : ''}`"
+            :to="link.path"
+            >{{ link.name }}</router-link
+          >
+          <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
+        </div>
+        <div class="d-flex">
+            <Button class="button" content="Sign in" :dark="true" />
+            <Button class="button" content="Sign in" :outlined="true" />
+        </div>
+      </template>
+    </Modal>
   </div>
 </template>
 
@@ -51,9 +69,11 @@ export default {
         path: "/contact",
       },
     ],
+    showModal: true,
   }),
   components: {
     Search: () => import("@/components/my-search-ui"),
+    Modal: () => import("@/components/Modal"),
     Button: () => import("@/components/my-button-ui"),
   },
 };
@@ -76,20 +96,19 @@ export default {
 
   .links {
     padding: 12px 30px;
+  }
+  .link {
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #646464;
+    text-decoration: none;
+    margin: 0px 12px;
 
-    .link {
-      font-family: Raleway;
-      font-weight: normal;
-      font-size: 13px;
-      letter-spacing: 0.04em;
-      text-align: left;
-      color: #646464;
-      text-decoration: none;
-      margin: 0px 12px;
-
-      &.active {
-        font-weight: bold;
-      }
+    &.active {
+      font-weight: bold;
     }
   }
   .search {
@@ -114,9 +133,31 @@ export default {
   .toogle-nav {
     right: 22px;
     position: absolute;
-    img{
-      width:30px;
+    img {
+      width: 30px;
     }
+  }
+  .small-nav {
+    .link {
+      color: #646464;
+      display: block;
+      margin-left: 0;
+      &.active {
+        color: #000000;
+      }
+      margin-bottom: 26px;
+    }
+    .cart {
+      display: block;
+      margin-bottom: 26px;
+    }
+    .button{
+      margin-left: 0;
+      margin-right: 35px;
+    }
+  }
+  .d-flex{
+    display: flex;
   }
 }
 </style>

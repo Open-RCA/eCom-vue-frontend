@@ -27,7 +27,7 @@ export default {};
 <style lang="scss" scoped>
 .shopSearch {
   padding-top: 4em;
-  position: relative;
+  // position: relative;
   input {
     padding-top: 1rem;
     padding-bottom: 1rem;
