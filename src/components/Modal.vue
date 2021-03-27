@@ -1,12 +1,14 @@
 <template>
-  <div class="modal-backdrop">
-    <div class="modal">
-      <div class="col-12 close" @click="close()">
-        <img src="@/assets/svg/close.svg" alt="" />
+  <transition name="modal-fade">
+    <div class="modal-backdrop">
+      <div class="modal">
+        <div class="col-12 close" @click="close()">
+          <img src="@/assets/svg/close.svg" alt="" />
+        </div>
+        <slot name="content" />
       </div>
-      <slot name="content" />
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -43,12 +45,21 @@ export default {
   position: absolute;
   flex-direction: column;
   padding: 24px;
-  *{
-      padding: 0px !important;
+  * {
+    padding: 0px !important;
   }
 }
 .close {
   text-align: right;
   margin-bottom: 26px;
+}
+.modal-fade-enter,
+.modal-fade-leave-to {
+  opacity: 0;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.5s ease;
 }
 </style>
