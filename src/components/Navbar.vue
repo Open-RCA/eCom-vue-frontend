@@ -1,19 +1,17 @@
 <template>
   <div id="top_navigation">
     <div class="row">
-      <div class="col-1">
+      <div class="col-2 col-lg-1">
         <div class="logo">
           <img src="@/assets/svg/logo.svg" alt="" />
         </div>
       </div>
-      <div class="col-1 offset-10">
-        <div class="d-lg-none toogle-nav" @click="showModal = true">
+      <div class="d-lg-none col-2 offset-8">
+        <div class="toogle-nav text-right" @click="showModal = true">
           <img cla src="@/assets/svg/bars.svg" alt="" />
         </div>
       </div>
-    </div>
-    <div class="d-none d-lg-block">
-      <div class="links">
+      <div class="d-none d-lg-block links col-4">
         <router-link
           v-for="(link, i) in links"
           :key="i"
@@ -22,12 +20,19 @@
           >{{ link.name }}</router-link
         >
       </div>
-      <Search class="search" />
-      <div class="side-items">
-        <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
-        <Button class="button" content="Sign in" :dark="true" />
-        <Button class="button" content="Sign in" :outlined="true" />
+      <div class="d-none d-lg-block col-3">
+        <Search class="search" />
       </div>
+      <div class="d-none d-lg-flex col-4 side-items">
+        <div class="ml-auto d-flex">
+          <div class="cart"><img src="@/assets/svg/cart.svg" alt="" /></div>
+          <Button class="button" content="Sign in" :dark="true" />
+          <Button class="button" content="Sign in" :outlined="true" />
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block">
+      <div class="side-items"></div>
     </div>
     <Modal class="small-nav" v-show="showModal" @close="showModal = false">
       <template v-slot:content>
@@ -94,14 +99,21 @@ export default {
   padding: 12px 26px;
   text-align: left;
   // display: flex;
-
+  .col-2,
+  .col-3,
+  .col-4 {
+    padding: 0;
+  }
+  .text-right {
+    text-align: right;
+  }
   img {
     width: 40px;
     height: 40px;
   }
 
   .links {
-    padding: 12px 30px;
+    padding-top: 12px;
   }
   .link {
     font-family: Raleway;
@@ -118,7 +130,7 @@ export default {
     }
   }
   .search {
-    padding: 6px 30px;
+    padding-top: 6px;
   }
   .cart {
     display: flex;
@@ -131,10 +143,6 @@ export default {
   }
   .button {
     margin-left: 24px;
-  }
-  .side-items {
-    display: flex;
-    margin-left: 152px;
   }
   .toogle-nav {
     right: 22px;
@@ -164,6 +172,9 @@ export default {
   }
   .d-flex {
     display: flex;
+  }
+  .ml-auto{
+    margin-left: auto;
   }
 }
 </style>

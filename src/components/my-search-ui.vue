@@ -15,8 +15,8 @@
 export default {
   props: {
     width: {
-      type: Number,
-      default: 346,
+      type: String,
+      default: "100%",
     },
   },
   computed: {
