@@ -209,6 +209,7 @@ export default {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        overflow: hidden;
 
         img {
           width: 100%;
