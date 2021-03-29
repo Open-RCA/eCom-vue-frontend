@@ -13,8 +13,8 @@
           <div>
             <h4>The Nike Jordan 1</h4>
             <p>
-              Lorem ipsum dolor, sit amet consec tetur adipisicing elit ipsum
-              dolor, cons.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Quasi nihil sed dolor pariatur fugiat. sit amet, consectetur adipiscing
             </p>
             <button type="button">Buy Now</button>
           </div>
@@ -151,6 +151,7 @@ export default {
           margin: 10px 0;
           padding: 0;
           font-size: 95%;
+          line-height: 140%;
         }
         button {
           flex: none;
@@ -160,8 +161,9 @@ export default {
           font-weight: bold;
           width: 100%;
           margin-left: 0;
-          height: 42px;
+          height: 45px;
           margin-top: 20px;
+          cursor: pointer;
         }
       }
     }
@@ -193,6 +195,16 @@ export default {
         cursor: pointer;
         margin-left: 0;
         margin-top: 20px;
+        transition-duration: 0.5s;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+
+        &:hover svg {
+          fill: white;
+        }
       }
     }
     .image_container {
@@ -281,15 +293,6 @@ export default {
     }
   }
 }
-
-// .btn-control:hover,
-// .btn-control:hover svg {
-//   background: black;
-//   border: 1px solid black;
-//   border-radius: 50%;
-//   color: white;
-//   fill: white;
-// }
 
 /** For Small screens */
 @media screen and (max-width: 768px) {
