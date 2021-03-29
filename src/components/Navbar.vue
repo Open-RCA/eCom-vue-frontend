@@ -56,6 +56,10 @@ export default {
 
 <style lang="scss" scoped>
 #top_navigation {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: sticky;
+  top: 0;
   width: 1920px;
   // height: 50px;
   background: #fff;
@@ -63,6 +67,7 @@ export default {
   padding: 12px 26px;
   text-align: left;
   display: flex;
+  z-index: 1000;
 
   img {
     width: 40px;

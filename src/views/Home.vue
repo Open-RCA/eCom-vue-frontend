@@ -17,3 +17,8 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+// .home {
+//   background: rgb(147, 212, 255);
+// }
+</style>
