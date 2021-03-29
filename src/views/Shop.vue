@@ -1,7 +1,8 @@
 <template>
   <div id="shop_pag">
     <Nav-bar />
-    <Footer class="footer" />
+    <ShopProducts />
+    <Footer />
   </div>
 </template>
 
@@ -10,12 +11,7 @@ export default {
   components: {
     NavBar: () => import("@/components/Navbar"),
     Footer: () => import("@/components/Footer"),
+    ShopProducts: () => import("@/components/ShopProducts"),
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.footer {
-  margin-top: 40vh;
-}
-</style>

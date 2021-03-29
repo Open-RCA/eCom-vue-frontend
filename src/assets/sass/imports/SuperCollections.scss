@@ -1,114 +1,232 @@
-.head{
+.head {
     color: black;
     text-align: left;
     font-family: 'Raleway', sans-serif;
     font-size: larger;
     margin-left: 0em;
+    font-weight: 400;
 }
 
-.description{
-width: 260px;
-height: 140px;
-background-color:#FFF;
-margin-left: 0px;
-margin-top: -4.1em;
-margin-bottom: 5em;
-display: inline-block;
-}
-
-.name{
-    font-family: 'Raleway',sans-serif;
-    font-size: 14px;
-    float: left;
-    margin-top: 1em;
-    padding-left: 8px;
-}
-.price{
-    font-family: 'Raleway';
-    font-size: 14px;
-    float: right;
-    margin-top: 1em;
-    padding-right: 7px;
-}
-.circ{
-    margin-left: 1em;
-}
-button{
-    float: left;
-    margin-left: 10px;
-    font-family: Raleway;
-    font-size: 8;
-    width: 9em;
-    height: 3em;
-    margin-top: 32px;
-    border: 0;
-    color: #FFF;
-    background-color: black;
-}
-
-.img1{
-    width: 300px;
-    height: 665px;
-    margin-left: -15px;
-    margin-top: -300px;
-    float: left;
-}
-
-.img2{
-    width: 100px;
-    height: 100px;
-    margin-left: -15px;
-    margin-top: 200px;
-    // float: left;
-}
-
-.img3{
-    width: 300px;
-    height: 300px;
-    margin-left: -15px;
-    margin-top: -10px;
-    float: left;
-}
-
-.img4{
-    width: 300px;
-    height: 400px;
-    margin-left: -15px;
-    margin-top: -110px;
-    float: left;
-}
-
-.img2{
-    width: 400px;
-    height: 400px;
-    margin-left: 1px;
-    margin-top: 20px;
-    float: left;
-}
-.img{
-    background-color: rgb(202, 202, 202);
-    border: 1px solid transparent;
+.Jordan-image {
     width: 260px;
+    height: 350px;
+    background-color: rgb(177, 174, 174);
+    margin-left: 3em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    border: 1px solid transparent;
+}
+
+.Jordan-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Jordan-description {
+    border: 1px solid #fff;
+    margin-left: 3em;
+    width: 260px;
+    height: 120px;
+    margin-bottom: 2em;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+    margin-top: -20px;
+    display: block;
+}
+
+
+.Jordan-description h3 {
+    font-size: 15px;
+    font-family: Raleway;
+    display: inline;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.Jordan-description div.rating {
+    display: block;
+    width: 100%;
+}
+
+// Jordan
+
+
+
+.product-image {
+    width: 240px;
     height: 300px;
-    margin-left: 50px;
-    margin-top: -26px;
-    display:inline;
+    background-color: rgb(179, 179, 179);
+    margin-left: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    border: 1px solid transparent;
+    padding-bottom: 2px;
 }
-.collections{
-    display: flex;
+
+.product-image img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin-top: 35px;
+}
+
+.description {
+    border: 1px solid #fff;
+    margin-left: 1em;
+    width: 240px;
+    height: 120px;
+    margin-bottom: 2em;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+    margin-top: -20px;
 }
 
 
-h3{
+.description h3 {
+    font-size: 15px;
+    font-family: Raleway;
+    display: inline;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.price {
+    float: right;
+    margin-right: 15px;
+}
+
+.name {
+    float: left;
+    margin-left: 15px;
+}
+
+button {
+    margin-top: 6px;
+    float: left;
+    margin-left: 1em;
+    width: 130px;
+    height: 33px;
+    font-family: Raleway;
+    font-size: 14px;
+    border-radius: 0;
+    border: 1px solid black;
+    color: #fff;
+    background-color: black;
+    font-weight: 200;
+}
+
+.J-button {
+    margin-top: 70px;
+    float: left;
+    margin-left: -7em;
+    width: 130px;
+    height: 33px;
+    font-family: Raleway;
+    font-size: 14px;
+    border-radius: 0;
+    border: 1px solid black;
+    color: #fff;
+    background-color: black;
+    font-weight: 200;
+}
+
+.images {
+    display: block;
+    float: left;
+    margin-top: -1.5%;
+    ;
+
+}
+
+.men-head {
     color: black;
     text-align: left;
     font-family: 'Raleway', sans-serif;
     font-size: larger;
+    margin-left: 2.5em;
+    margin-top: 26em;
+    font-weight: 400;
+}
+
+
+.man-collection img {
+    width: 440px;
+    height: 790px;
+    float: left;
     margin-left: 3em;
 }
 
-.men-collection img{
-    width: 500px;
-    height: 600px;
-    margin-left: -46em;
+//man collections
+.man-images {
+    display: block;
+    float: left;
+    margin-top: 2em;
+}
+
+.man-product-image {
+    width: 255px;
+    height: 260px;
+    background-color: rgb(177, 174, 174);
+    margin-left: 2em;
+    margin-top: -2em;
+    border: 1px solid transparent;
+}
+
+.man-product-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.man-description {
+    border: 1px solid #fff;
+    margin-left: 2em;
+    width: 255px;
+    height: 115px;
+    margin-bottom: 2em;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+    margin-top: 2px;
+}
+
+
+.man-description h3 {
+    font-size: 15px;
+    font-family: Raleway;
+    display: inline;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.man-price {
+    float: right;
+    margin-right: 15px;
+}
+
+.man-name {
+    float: left;
+    margin-left: 15px;
+}
+
+.woman-head {
+    color: black;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    margin-left: 2.5em;
+    margin-top: 45em;
+    font-weight: 400;
+}
+
+.rating {
+    float: left;
+    margin-left: 1em;
+}
+
+.Jordan-rating {
+    float: left;
+    margin-left: -5.5em;
+    margin-top: 2em;
 }
