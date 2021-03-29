@@ -94,6 +94,11 @@ export default {
 #top_navigation {
   // width: 1920px;
   // height: 50px;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.01);
   padding: 12px 26px;

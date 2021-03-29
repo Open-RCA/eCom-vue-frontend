@@ -130,6 +130,6 @@ body {
 	flex-direction: column;
 	font-family: 'Open Sans', sans-serif;
 	height: 100vh;
-    margin: -20px 0 50px;
+    /* margin: -20px 0 50px; */
     overflow: hidden;
 }

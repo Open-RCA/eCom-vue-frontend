@@ -58,6 +58,7 @@ export default {
   letter-spacing: 0.04em;
   text-align: left;
   text-align: center;
+  margin-top: auto;
 
   &.dark {
     background: #000000;

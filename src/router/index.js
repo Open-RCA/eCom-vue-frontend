@@ -51,7 +51,7 @@ const routes = [
   },
   {
     path: '/collect',
-    name: 'Collections',
+    name: 'Collection',
     component: collection,
   },
   {
