@@ -77,6 +77,7 @@ export default {
 #footer {
   background-color: #000000;
   font-family: Raleway;
+  margin-top: 3em;
   .row {
     padding: 70px 100px;
   }
@@ -128,6 +129,17 @@ export default {
     font-size: 12px;
     letter-spacing: 0.05em;
     color: #c8c8c8;
+  }
+  @media (max-width: 992px) {
+    .col-12.col-md-4 {
+      margin-top: 12px;
+    }
+    .social-medias img{
+      margin-right: 25px;
+    }
+  .row {
+    padding: 70px 50px;
+  }
   }
 }
 </style>
