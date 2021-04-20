@@ -1,0 +1,75 @@
+body{
+  background: #FAFAFA;
+
+}
+#allcollected {
+  color: black;
+  padding: 30px 50px 50px 60px;
+}
+.head{
+  color: black;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 25px;
+}
+.swiper {
+  background-color: #ffffff;    
+  margin-top: 50px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+  width:74em;
+  height: 470px;
+
+  .text{
+      color: black;
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+      margin: 70px 0px 0px 70px;
+      position: absolute;
+      width: 295px;
+  }
+  h3 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+}
+  p{
+    font-weight:lighter;
+    font-size :15px;
+    padding: 20px 0px 40px 0px;
+  }
+.click{
+      color: white;
+      font-weight:100;
+      background-color: black;
+      width: 20em;
+      height: 4em;
+      border: none;
+      cursor: pointer;
+      
+  }
+  .imgs{
+      // margin: 0px 0px 0px 50px;
+      position: absolute;
+      display: inline-flex;
+      height: 430px;
+  }
+.img1{
+      margin-right: 4em;
+      margin-top: 95px;
+      margin-left: -6.5em;
+  }
+  .imgs .img2{
+      float: right;
+      width: 50%;
+      margin-left: 4em;
+  }
+  img{
+      margin-top: 45px;
+  }
+  }
