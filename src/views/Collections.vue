@@ -112,7 +112,7 @@
  </div>
   </div>
 
-<!-- <Footer/> -->
+<Footer/>
   </div>
 </template>
 <style lang="scss" scoped></style>
@@ -122,7 +122,7 @@
 export default {
   components: {
     NavBar: () => import("@/components/Navbar"),
- //   Footer:()=> import("@/components/Footer")
+   Footer:()=> import("@/components/Footer")
 
   },
 data(){
